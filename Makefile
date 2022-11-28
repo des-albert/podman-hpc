@@ -15,7 +15,7 @@ install:
 	install ./bin/exec-wait $(DESTDIR)/usr/bin/
 	mkdir -p $(DESTDIR)/etc/podman_hpc/
 	install ./etc/01-gpu.conf $(DESTDIR)/etc/podman_hpc/
-	install ./etc/02-mpich.conf $(DESTDIR)/etc/podman_hpc/
+	install ./etc/01-mpich.conf $(DESTDIR)/etc/podman_hpc/
 	mkdir -p $(DESTDIR)/etc/podman_hpc/modules.d
 	install ./etc/modules.d/gpu.yaml $(DESTDIR)/etc/podman_hpc/modules.d
 	install ./etc/modules.d/mpich.yaml $(DESTDIR)/etc/podman_hpc/modules.d
